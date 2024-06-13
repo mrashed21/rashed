@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .header {
+  background-image: url(../image/header-bg.svg);
+} */
+
+.menu-a {
+  @apply font-poppins text-white capitalize font-semibold p-1 pl-5 pr-5  lp:pl-4 lp:pr-4 dp:pl-5 dp:pr-5 text-xl 
+  hover:text-black hover:bg-white hover:rounded-3xl  focus:text-red-600 focus:bg-white focus:rounded-3xl hover:shadow-menuShasow focus:shadow-menuShasow transition-all ease-in-out duration-300
+  active:text-red-600 active:bg-white active:rounded-3xl active:shadow-menuShasow;
+}
+
+.menu-b {
+  @apply font-poppins text-white font-semibold text-xl p-1 pl-5 pr-5 lp:pl-4 lp:pr-4 dp:pl-5 dp:pr-5 
+  hover:text-black hover:bg-white hover:rounded-3xl  focus:text-red-600 focus:bg-white focus:rounded-3xl hover:shadow-menuShasow focus:shadow-menuShasow transition-all ease-in-out duration-300;
+}
+
+.auth {
+  @apply text-white font-semibold text-xl bg-purple-500  pl-5 pr-5 p-2  lp:pl-4 lp:pr-4 lp:p-2 dp:p-3 dp:pl-5 dp:pr-5 
+  rounded-full hover:text-black hover:bg-slate-200 hover:rounded-3xl  focus:text-red-600 focus:bg-slate-100 focus:rounded-3xl hover:shadow-menuShasow focus:shadow-menuShasow transition-all ease-in-out duration-300;
+}
+
+.icon {
+  @apply transition ease-in-out text-center rounded-full  hover:scale-125
+  w-7 h-7 text-xl  bg-white lp:text-2xl lp:w-8 lp:h-8 lp:hover:scale-125 dp:text-2xl dp:w-8 dp:h-8;
+}

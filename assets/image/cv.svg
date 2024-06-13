@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="227" height="227" viewBox="0 0 227 227">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #b21eb2;
+      }
+
+      .cls-1 {
+        opacity: 0.14;
+      }
+
+      .cls-3 {
+        font-size: 27.67px;
+        fill: #fff;
+        font-family: ClashDisplay;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" class="cls-1" cx="113.5" cy="113.5" r="113.5"/>
+  <circle id="Ellipse_3_copy" data-name="Ellipse 3 copy" class="cls-1" cx="113.5" cy="113.5" r="93.5"/>
+  <circle class="cls-2" cx="113" cy="113" r="75"/>
+  <text id="CV" class="cls-3" transform="translate(76.458 156.845) scale(1.768 1.735)">CV</text>
+  <image id="bar" x="93" y="67" width="40" height="40" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAACGklEQVRYhc2YPUgcQRTHf3cJXoJGkFiIsbKxskogILELKZUr/OAKEQmYIkIs0oQ0KQJJIIKBkEAKRRBLiyAWJo3BUhALCzkIWFgbDHKXIBOeLGFZ9mN25+3d/mHgbuf2vR+zO/f+b0rGGHLWA2AMuA8MAt3Ad2ACuExMLYA5jWljzL6JVsUm7/UcFq8LWAOqIXNfgUNgF2haRVNevQFjzM+QNasbY+5lian5Dt4CjoG+wPXfwADwK0vQsg7blbZC4ETvs8KhCDgHjEbMbbsE1gJ8FzP3xyWwBuAkcDtmvsMluAbgjEKMSGkADufEdiVXwJ6InasmV8Be13csSa6AZ0q/iVTaWix1tuT7fsfinn7gNHDt3Dahbam7Bqx4tsm/6vK5M+Hei4CtkoTfvL+nRLtlC9hh7T7sdcMmpu07KNVgXBFuJi+7VYsxoLZ6kiZnFs/32AFuMW2+rMb0aQa4F1lyubjn5yngXmfN42rxX1nALbvkcAWUsRQD98U1vgagjE8hcOsasbUAZaz64Da14mr2xbNecyQVYl4raCuOPpyk2XbmorBHXMnbhMboL9DwT/sBHwHPgLvAzTYBioE4AD545zj/d/HLFFWhVXpjvLMZOb/70aYVS1JVAPeAkYICHglgw9sYRVSzHGiCCqeyd+JZVJ3II34I7BQUsFb2WsC3BYAJ6iOw4a/FU8ACMNTGTSPdYx34DKwC/ANtwPjq9O45EwAAAABJRU5ErkJggg=="/>
+</svg>

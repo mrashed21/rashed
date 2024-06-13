@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhamaad Rashed</title>
+    <!-- linked favicon icon -->
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon-iiUzWAB1.ico"
+      type="image/x-icon"
+    />
+    <!-- linked font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- linked Tailwaind CSS -->
+    <link rel="stylesheet" crossorigin href="/assets/index-BwK8rSBg.css">
+  </head>
+
+  <body>
+    <!-- start header section -->
+    <nav
+      class="flex justify-between border-b-2 border-purple-400 shadow-sm shadow-purple-400 pl-8 pr-2 h-14 items-center bg-gray-800 z-50 sticky top-[1px] w-[100%] lp:h-16"
+    >
+      <div class="logo">
+        <a
+          href="#"
+          class="text-white capitalize font-bold font-fira hover:text-violet-600 ease-in-out duration-300 text-2xl"
+          >muhammad rashed</a
+        >
+      </div>
+      <i
+        class="fa-solid fa-bars text-white text-3xl fixed top-3 right-4 lp:hidden"
+        id="open"
+      ></i>
+
+      <!-------strat menu sectioon------->
+      <div
+        class="hidden transit ease-in-out duration-300 lp:inline-block"
+        id="hamburger"
+      >
+        <ul
+          class="flex flex-col gap-10 bg-gray-900 items-center justify-center z-10 h-[100%] w-[100%] fixed top-0 right-0 lp:flex-row lp:bg-transparent lp:static lp:gap-11"
+        >
+          <i
+            class="fa-solid fa-xmark text-white text-3xl fixed top-3 right-4 lp:hidden"
+            id="close"
+          ></i>
+          <li>
+            <a href="#" class="menu-a"> home </a>
+          </li>
+          <li>
+            <a href="#about" class="menu-b"> About me</a>
+          </li>
+          <li>
+            <a href="#skill" class="menu-a">skills</a>
+          </li>
+          <li>
+            <a href="#project" class="menu-a"> projects </a>
+          </li>
+          <li>
+            <a href="#contact" class="auth"> Contact me</a>
+          </li>
+        </ul>
+      </div>
+      <!-------end menu sectioon------->
+    </nav>
+    <!-------end nav sectioon------->
+    <section id="header">
+      <div class="bg-header bg-cover h-[702px] tb:h-[476px]">
+        <!-- start hero section -->
+        <div class="tb:flex tb:justify-between">
+          <!-- start left side -->
+          <div class="tb:flex tb:gap-12">
+            <div>
+              <img
+                class="h-52 w-6 translate-y-[40%] tb:h-72 tb:w-8 tb:translate-y-[20%]"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='46'%20height='305'%20viewBox='0%200%2046%20305'%3e%3cimage%20id='Vector_Smart_Object'%20data-name='Vector%20Smart%20Object'%20x='-18'%20width='64'%20height='305'%20xlink:href='data:img/png;base64,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'/%3e%3c/svg%3e"
+                alt="imge"
+              />
+            </div>
+
+            <div
+              class="flex flex-col items-center -translate-y-[50%] tb:items-start tb:translate-y-[55%]"
+            >
+              <p class="uppercase font-fira text-gray-300 text-lg tb:text-2xl">
+                front-end web developer
+              </p>
+              <h1
+                class="font-poppins font-bold text-slate-50 text-4xl tb:text-5xl lp:text-7xl"
+              >
+                Muhammad <br />
+                Rashed
+              </h1>
+              <div class="flex flex-row gap-8 tb:gap-1">
+                <div>
+                  <img
+                    class="h-16 w-4 translate-x-8 tb:-translate-x-1"
+                    src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1'%20height='143'%20viewBox='0%200%201%20143'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23fff;%20}%20%3c/style%3e%3c/defs%3e%3crect%20class='cls-1'%20width='1'%20height='143'/%3e%3c/svg%3e"
+                    alt="image"
+                  />
+                </div>
+                <div>
+                  <p class="text-gray-300 text-lg capitalize font-poppins">
+                    I'm front-end web developer. <br />
+                    I'm from dhaka bangladesh.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end left side -->
+          <!-- start right side -->
+          <div class="flex flex-col tb:flex-row relative">
+            <div class="order-2 tb:-order-1 flex justify-center">
+              <img
+                class="-translate-y-[8%] h-80 tb:translate-y-[49%] tb:-translate-x-[15%]"
+                src="/assets/rashed-CT5HMfQE.svg"
+                alt="image"
+              />
+              <a
+                class="absolute -translate-x-[160%] translate-y-[70%] tb:-translate-x-[360%] tb:translate-y-[320%] lp:-translate-x-[190%] lp:translate-y-[210%] hover:scale-110 transition ease-in-out"
+                href="./assets/Rashed  cv.pdf"
+                ><img
+                  class="h-28 lp:h-32"
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjI3IiBoZWlnaHQ9IjIyNyIgdmlld0JveD0iMCAwIDIyNyAyMjciPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEsIC5jbHMtMiB7CiAgICAgICAgZmlsbDogI2IyMWViMjsKICAgICAgfQoKICAgICAgLmNscy0xIHsKICAgICAgICBvcGFjaXR5OiAwLjE0OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtc2l6ZTogMjcuNjdweDsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICAgIGZvbnQtZmFtaWx5OiBDbGFzaERpc3BsYXk7CiAgICAgICAgZm9udC13ZWlnaHQ6IDUwMDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPGNpcmNsZSBpZD0iRWxsaXBzZV8zX2NvcHlfMiIgZGF0YS1uYW1lPSJFbGxpcHNlIDMgY29weSAyIiBjbGFzcz0iY2xzLTEiIGN4PSIxMTMuNSIgY3k9IjExMy41IiByPSIxMTMuNSIvPgogIDxjaXJjbGUgaWQ9IkVsbGlwc2VfM19jb3B5IiBkYXRhLW5hbWU9IkVsbGlwc2UgMyBjb3B5IiBjbGFzcz0iY2xzLTEiIGN4PSIxMTMuNSIgY3k9IjExMy41IiByPSI5My41Ii8+CiAgPGNpcmNsZSBjbGFzcz0iY2xzLTIiIGN4PSIxMTMiIGN5PSIxMTMiIHI9Ijc1Ii8+CiAgPHRleHQgaWQ9IkNWIiBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc2LjQ1OCAxNTYuODQ1KSBzY2FsZSgxLjc2OCAxLjczNSkiPkNWPC90ZXh0PgogIDxpbWFnZSBpZD0iYmFyIiB4PSI5MyIgeT0iNjciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgeGxpbms6aHJlZj0iZGF0YTppbWcvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ2dBQUFBb0NBWUFBQUNNL3JodEFBQUNHa2xFUVZSWWhjMllQVWdjUVJUSGYzY0pYb0pHa0ZpSXNiS3hza29nSUxFTEtaVXIvT0FLRVFtWUlrSXMwb1EwS1FKSklJS0JrRUFLUlJCTGl5QVdKbzNCVWhBTEN6a0lXRmdiREhLWElCT2VMR0ZaOW1OMjUrM2QvbUhnYnVmMnZSK3pPL2YrYjByR0dITFdBMkFNdUE4TUF0M0FkMkFDdUV4TUxZQTVqV2xqekw2SlZzVW03L1VjRnE4TFdBT3FJWE5mZ1VOZ0YyaGFSVk5ldlFGanpNK1FOYXNiWSs1bGlhbjVEdDRDam9HK3dQWGZ3QUR3SzB2UXNnN2JsYlpDNEVUdnM4S2hDRGdIakViTWJic0UxZ0o4RnpQM3h5V3dCdUFrY0R0bXZzTWx1QWJnakVLTVNHa0FEdWZFZGlWWHdKNkluYXNtVjhCZTEzY3NTYTZBWjBxL2lWVGFXaXgxdHVUN2ZzZmlubjdnTkhEdDNEYWhiYW03QnF4NHRzbS82dks1TStIZWk0Q3Rrb1RmdkwrblJMdGxDOWhoN1Q3c2RjTW1wdTA3S05WZ1hCRnVKaSs3VllzeG9MWjZraVpuRnMvMzJBRnVNVzIrck1iMGFRYTRGMWx5dWJqbjV5bmdYbWZONDJyeFgxbkFMYnZrY0FXVXNSUUQ5OFUxdmdhZ2pFOGhjT3Nhc2JVQVphejY0RGExNG1yMnhiTmVjeVFWWWw0cmFDdU9QcHlrMlhibW9yQkhYTW5iaE1ib0w5RHdUL3NCSHdIUGdMdkF6VFlCaW9FNEFENTQ1emovZC9ITEZGV2hWWHBqdkxNWk9iLzcwYVlWUzFKVkFQZUFrWUlDSGdsZ3c5c1lSVlN6SEdpQ0NxZXlkK0paVkozSUkzNEk3QlFVc0ZiMldzQzNCWUFKNmlPdzRhL0ZVOEFDTU5UR1RTUGRZeDM0REt3Qy9BTnR3UGpxOU80NUV3QUFBQUJKUlU1RXJrSmdnZz09Ii8+Cjwvc3ZnPgo="
+                  alt="image"
+              /></a>
+            </div>
+            <div class="flex justify-center">
+              <ul
+                class="flex gap-5 -translate-y-[210%] order-1 tb:order-2 tb:flex-col tb:gap-3 tb:-translate-x-[100%] tb:translate-y-[25%]"
+              >
+                <li class="icon">
+                  <a href="https://github.com/mrashed21"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li class="icon">
+                  <a href="https://www.linkedin.com/in/mrashed21 "
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="icon">
+                  <a href="https://www.facebook.com/muhammadrashed0"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="icon">
+                  <a href="https://www.instagram.com/mrashed21">
+                    <i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="icon">
+                  <a href="https://twitter.com/mrashed_21"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li class="icon">
+                  <a href="https://wa.me/+8801781131905"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></a>
+                </li>
+                <li class="icon">
+                  <a href="https://t.me/mrashed21"
+                    ><i class="fa-brands fa-telegram"></i
+                  ></a>
+                </li>
+                <li class="icon">
+                  <a href="mailto:rashedjaman768@gmail.com"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end right side -->
+        </div>
+      </div>
+    </section>
+    <!-- end header section -->
+    <!----------------------------------------------->
+    <!-- start about section -->
+    <section id="about" class="bg-about bg-gray-950 bg-cover">
+      <div class="">
+        <h1
+          class="text-5xl text-white font-bold text-center pt-24 pb-14 font-fira"
+        >
+          About me
+        </h1>
+        <div class="flex flex-col gap-6 lp:flex-row lp:gap-0">
+          <div class="flex flex-col items-center lp:w-[40%]">
+            <img
+              class="rounded-full h-80 w-80 relative lp:items-center"
+              src="/assets/laptop%20and%20pc-CRxdSY3S.jpg"
+              alt="image"
+            />
+
+            <img
+              class="absolute w-28 -translate-x-[130%] translate-y-[170%]"
+              src="/assets/round-shape-about-Ca-KrzM0.svg"
+              alt="image"
+            />
+          </div>
+          <div class="lp:w-[60%] flex flex-col items-center lp:block">
+            <p class="text-white text-lg font-poppins text-justify p-6">
+              Hello! I'm Muhammad Rashed, a passionate Front-End Web Developer
+              with a knack for crafting visually stunning and highly functional
+              websites. With a strong foundation in HTML, CSS, JavaScript and
+              Rcact-JS I specialize in building responsive and user-friendly
+              interfaces. My goal is to create seamless digital experiences that
+              not only meet the needs of users but also drive business success.
+              Whether working on a small personal project or a large-scale
+              application, I am dedicated to bringing innovative ideas to life
+              through clean, efficient code and modern design principles.
+            </p>
+            <a class="auth text-center inline-block mt-4 mb-8 lp:ml-10" href="#"
+              >Contact me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about section -->
+    <!-- start skill section -->
+    <section id="skill" class="bg-skill bg-gray-950 bg-cover">
+      <div class="pb-16">
+        <h1
+          class="text-5xl text-white font-bold text-center capitalize pt-24 pb-14 font-fira"
+        >
+          skills
+        </h1>
+
+        <div
+          class="flex flex-col gap-10 lp:flex-row lp:items-center lp:justify-between ml-12 mr-12"
+        >
+          <div class="flex flex-col gap-3 order-2 lp:order-1 lp:w-[50%]">
+            <div class="flex flex-col items-center">
+              <div class="flex w-[100%] justify-between">
+                <p class="text-white text-xl font-fira">HTML</p>
+                <p class="text-white text-xl font-fira" id="html"></p>
+              </div>
+              <div class="w-[100%] h-4 bg-gray-200 rounded-3xl">
+                <div
+                  class="w-[90%] h-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-3xl animate-[html_5s_ease-in-out]"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex w-[100%] justify-between">
+                <p class="text-white text-xl font-fira">CSS</p>
+                <p class="text-white text-xl font-fira" id="css"></p>
+              </div>
+              <div class="w-[100%] h-4 bg-gray-200 rounded-3xl">
+                <div
+                  class="w-[80%] h-4 bg-gradient-to-r from-fuchsia-600 to-purple-600 rounded-3xl animate-[css_5s_ease-in-out]"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex w-[100%] justify-between">
+                <p class="text-white text-xl font-fira">Tailwind CSS</p>
+                <p class="text-white text-xl font-fira" id="tailwind"></p>
+              </div>
+              <div class="w-[100%] h-4 bg-gray-200 rounded-3xl">
+                <div
+                  class="w-[75%] h-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-3xl animate-[tailwind_5s_ease-in-out]"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex w-[100%] justify-between">
+                <p class="text-white text-xl font-fira">Photoshop</p>
+                <p class="text-white text-xl font-fira" id="photoshop"></p>
+              </div>
+              <div class="w-[100%] h-4 bg-gray-200 rounded-3xl">
+                <div
+                  class="w-[55%] h-4 bg-gradient-to-r from-fuchsia-600 to-purple-600 rounded-3xl animate-[photoshop_5s_ease-in-out]"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex w-[100%] justify-between">
+                <p class="text-white text-xl font-fira">Figma</p>
+                <p class="text-white text-xl font-fira" id="figma"></p>
+              </div>
+              <div class="w-[100%] h-4 bg-gray-200 rounded-3xl">
+                <div
+                  class="w-[65%] h-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-3xl animate-[figma_5s_ease-in-out]"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex w-[100%] justify-between">
+                <p class="text-white text-xl font-fira">Git & GitHub</p>
+                <p class="text-white text-xl font-fira" id="git"></p>
+              </div>
+              <div class="w-[100%] h-4 bg-gray-200 rounded-3xl">
+                <div
+                  class="w-[85%] h-4 bg-gradient-to-r from-fuchsia-600 to-purple-600 rounded-3xl animate-[git_5s_ease-in-out]"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex w-[100%] justify-between">
+                <p class="text-white text-xl font-fira">JavaScript</p>
+                <p class="text-white text-xl font-fira" id="javaScript"></p>
+              </div>
+              <div class="w-[100%] h-4 bg-gray-200 rounded-3xl">
+                <div
+                  class="w-[60%] h-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-3xl animate-[javaScript_5s_ease-in-out]"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex w-[100%] justify-between">
+                <p class="text-white text-xl font-fira">React</p>
+                <p class="text-red-600 text-xl font-fira">Learning</p>
+              </div>
+              <div class="w-[100%] h-4 bg-gray-200 rounded-3xl">
+                <div
+                  class="w-[1000%] h-4 bg-gradient-to-r from-fuchsia-500 to-cyan-500 rounded-3xl animate-[react_5s_ease-in-out_infinite]"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center order-1 lp:order-2">
+            <img
+              class="w-96 h-96 rounded-full lp:w-[420px] lp:h-[420px]"
+              src="/assets/soft-skills-jOWdR8to.jpg"
+              alt="image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end skill section -->
+    <!-- start project section -->
+    <section id="project" class="bg-project bg-cover">
+      <div class="">
+        <h1
+          class="text-5xl text-white font-bold text-center capitalize pt-24 pb-14 font-robboto"
+        >
+          My Projects
+        </h1>
+        <div
+          class="flex flex-wrap gap-6 gap-y-10 items-center justify-center p-8 pb-14"
+        >
+          <div class="">
+            <div
+              class="w-[350px] h-[280px] bg-purple-100 rounded-3xl shadow-project hover:shadow-projectHove p-4 hover:scale-105 ease-in-out transition"
+            >
+              <a
+                href="https://mrashed21.github.io/Web-Calculetor/"
+                target="_blank"
+              >
+                <img
+                  class="w-[100%] h-[100%] rounded-2xl"
+                  src="./assets/image/web-cal.png "
+                  alt="image"
+                />
+              </a>
+            </div>
+            <p
+              class="text-2xl text-white font-semibold text-center capitalize mt-3 font-poppins"
+            >
+              Web Master Calculator
+            </p>
+          </div>
+
+          <div class="">
+            <div
+              class="w-[350px] h-[280px] bg-purple-100 rounded-3xl shadow-project hover:shadow-projectHove p-4 hover:scale-105 ease-in-out transition"
+            >
+              <a href="https://mrashed21.github.io/bizpro/" target="_blank">
+                <img
+                  class="w-[100%] h-[100%] rounded-2xl"
+                  src="./assets/image/bzpro.png "
+                  alt="image"
+                />
+              </a>
+            </div>
+            <p
+              class="text-2xl text-white font-semibold text-center capitalize mt-3 font-poppins"
+            >
+              bizpro
+            </p>
+          </div>
+
+          <div class="">
+            <div
+              class="w-[350px] h-[280px] bg-purple-100 rounded-3xl shadow-project hover:shadow-projectHove p-4 hover:scale-105 ease-in-out transition"
+            >
+              <a
+                href="https://mrashed21.github.io/Dhabi-Restaurant/"
+                target="_blank"
+              >
+                <img
+                  class="w-[100%] h-[100%] rounded-2xl"
+                  src="./assets/image/Restaurant.png "
+                  alt="image"
+                />
+              </a>
+            </div>
+            <p
+              class="text-2xl text-white font-semibold text-center capitalize mt-3 font-poppins"
+            >
+              Restaurant
+            </p>
+          </div>
+
+          <div class="">
+            <div
+              class="w-[350px] h-[280px] bg-purple-100 rounded-3xl shadow-project hover:shadow-projectHove p-4 hover:scale-105 ease-in-out transition"
+            >
+              <a
+                href="https://mrashed21.github.io/website-landing-page/"
+                target="_blank"
+              >
+                <img
+                  class="w-[100%] h-[100%] rounded-2xl"
+                  src="./assets/image/nexcent.png "
+                  alt="image"
+                />
+              </a>
+            </div>
+            <p
+              class="text-2xl text-white font-semibold text-center capitalize mt-3 font-poppins"
+            >
+              nexcent
+            </p>
+          </div>
+
+          <div class="">
+            <div
+              class="w-[350px] h-[280px] bg-purple-100 rounded-3xl shadow-project hover:shadow-projectHove p-4 hover:scale-105 ease-in-out transition"
+            >
+              <a
+                href="https://mrashed21.github.io/login-page-card/"
+                target="_blank"
+              >
+                <img
+                  class="w-[100%] h-[100%] rounded-2xl"
+                  src="./assets/image/login-card.png "
+                  alt="image"
+                />
+              </a>
+            </div>
+            <p
+              class="text-2xl text-white font-semibold text-center capitalize mt-3 font-poppins"
+            >
+              login card
+            </p>
+          </div>
+
+          <div class="">
+            <div
+              class="w-[350px] h-[280px] bg-purple-100 rounded-3xl shadow-project hover:shadow-projectHove p-4 hover:scale-105 ease-in-out transition"
+            >
+              <a
+                href="https://mrashed21.github.io/Dhabi-Restaurant/"
+                target="_blank"
+              >
+                <img
+                  class="w-[100%] h-[100%] rounded-2xl"
+                  src="./assets/image/Dhabi Restaurant.png "
+                  alt="image"
+                />
+              </a>
+            </div>
+            <p
+              class="text-2xl text-white font-semibold text-center capitalize mt-3 font-poppins"
+            >
+              Dhabi Restaurant
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end project section -->
+    <!-- start contact section -->
+    <section id="contact" class="bg-skill bg-cover">
+      <div class="pb-10">
+        <h1
+          class="text-5xl text-white font-bold text-center capitalize pt-24 pb-14 font-poppins"
+        >
+          Contact me
+        </h1>
+        <div class="flex justify-center pl-8 pr-8">
+          <form action="#">
+            <label for="fname" class="text-white text-2xl font-poppins"
+              >Your Name : <span class="text-red-500 text-2xl">*</span> </label
+            ><br />
+            <input
+              class="w-[90%] h-10 rounded-3xl pl-6 p-4 outline-none text-black font-poppins font-medium text-xl placeholder:text-gray-400 placeholder:font-poppins placeholder:font-normal"
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Enter Your Name"
+              required
+            /><br />
+            <br />
+            <label for="phone" class="text-white text-2xl font-poppins"
+              >Contact Number :
+              <span class="text-red-500 text-2xl">*</span> </label
+            ><br />
+            <input
+              class="w-[90%] h-10 rounded-3xl pl-6 p-4 outline-none text-black font-poppins font-medium text-xl placeholder:text-gray-400 placeholder:font-poppins placeholder:font-normal"
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Enter Your Phone Number"
+              required
+            /><br />
+            <br />
+            <label for="mail" class="text-white text-2xl font-poppins"
+              >Email : <span class="text-red-500 text-2xl">*</span></label
+            ><br />
+            <input
+              class="w-[90%] h-10 rounded-3xl pl-6 p-4 outline-none text-black font-poppins font-medium text-xl placeholder:text-gray-400 placeholder:font-poppins placeholder:font-normal"
+              type="email"
+              id="mailo"
+              name="mail"
+              placeholder="Enter Your Email"
+              required
+            /><br />
+            <br />
+            <label for="message" class="text-white text-2xl font-poppins">
+              Message : <span class="text-red-500 text-2xl">*</span>
+            </label>
+            <br />
+            <textarea
+              class="w-[90%] rounded-3xl pl-6 p-4 outline-none text-black font-poppins font-medium text-xl placeholder:text-gray-400 placeholder:font-poppins placeholder:font-normal"
+              name="message"
+              id="message"
+              rows="7"
+              cols="45"
+              placeholder="Enter Message"
+            ></textarea>
+
+            <br />
+            <br />
+            <input class="auth" type="submit" value="Send Message" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end contact section -->
+    <!-- start contact section -->
+    <footer>
+      <div class="bg-footer bg-cover flex flex-col items-center pt-20 pb-10">
+        <hr class="border-[#b21eb2] border-2 w-[80%] mb-8 rounded-full" />
+        <div
+          class="flex items-center justify-between gap-4 tb:gap-16 lp:gap-60 dp:gap-96"
+        >
+          <div class="font-poppins text-white text-lg capitalize tb:text-xl">
+            muhammad rashed
+          </div>
+          <div class="">
+            <ul class="flex gap-4 tb:gap-5">
+              <li>
+                <a
+                  class="text-white capitalize text-sm tb:text-lg hover:text-red-700 ease-in-out transition"
+                  href="#"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white text-sm tb:text-lg hover:text-red-700 ease-in-out transition"
+                  href="#about"
+                  >About me</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white text-sm capitalize tb:text-lg hover:text-red-700 ease-in-out transition"
+                  href="#skill"
+                  >skills</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white text-sm capitalize tb:text-lg hover:text-red-700 ease-in-out transition"
+                  href="#projects"
+                  >projects</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end contact section -->
+    <!-- linked javascript -->
+    <script>
+      const open = document.getElementById("open");
+      const close = document.getElementById("close");
+      const menu = document.getElementById("hamburger");
+      const menuLinks = document.querySelectorAll("#hamburger ul li a");
+
+      open.addEventListener("click", () => {
+        menu.classList.remove("hidden");
+        open.classList.add("hidden");
+      });
+
+      close.addEventListener("click", () => {
+        menu.classList.add("hidden");
+        open.classList.remove("hidden");
+      });
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.add("hidden");
+          open.classList.remove("hidden");
+        });
+      });
+
+      /* skills section*/
+      /* html*/
+      const htmlNumber = document.getElementById("html");
+      let htmlCounter = 0;
+      setInterval(() => {
+        if (htmlCounter === 90) {
+          clearInterval();
+        } else {
+          htmlCounter += 1;
+          htmlNumber.innerHTML = htmlCounter + "%";
+        }
+      }, 35);
+      /* html*/
+      const cssNumber = document.getElementById("css");
+      let cssCounter = 0;
+      setInterval(() => {
+        if (cssCounter === 80) {
+          clearInterval();
+        } else {
+          cssCounter += 1;
+          cssNumber.innerHTML = cssCounter + "%";
+        }
+      }, 35);
+      /* html*/
+      const tailwindNumber = document.getElementById("tailwind");
+      let tailwindCounter = 0;
+      setInterval(() => {
+        if (tailwindCounter === 75) {
+          clearInterval();
+        } else {
+          tailwindCounter += 1;
+          tailwindNumber.innerHTML = tailwindCounter + "%";
+        }
+      }, 35);
+      /* html*/
+      const photoshopNumber = document.getElementById("photoshop");
+      let photoshopCounter = 0;
+      setInterval(() => {
+        if (photoshopCounter === 55) {
+          clearInterval();
+        } else {
+          photoshopCounter += 1;
+          photoshopNumber.innerHTML = photoshopCounter + "%";
+        }
+      }, 35);
+      /* html*/
+      const figmaNumber = document.getElementById("figma");
+      let figmaCounter = 0;
+      setInterval(() => {
+        if (figmaCounter === 65) {
+          clearInterval();
+        } else {
+          figmaCounter += 1;
+          figmaNumber.innerHTML = figmaCounter + "%";
+        }
+      }, 35);
+      /* html*/
+      const gitNumber = document.getElementById("git");
+      let gitCounter = 0;
+      setInterval(() => {
+        if (gitCounter === 85) {
+          clearInterval();
+        } else {
+          gitCounter += 1;
+          gitNumber.innerHTML = gitCounter + "%";
+        }
+      }, 35);
+      /* html*/
+      const javaScriptNumber = document.getElementById("javaScript");
+      let javaScriptCounter = 0;
+      setInterval(() => {
+        if (javaScriptCounter === 60) {
+          clearInterval();
+        } else {
+          javaScriptCounter += 1;
+          javaScriptNumber.innerHTML = javaScriptCounter + "%";
+        }
+      }, 35);
+    </script>
+  </body>
+</html>
